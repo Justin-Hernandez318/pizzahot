@@ -1,0 +1,301 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #d62828;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+
+/* NAVEGACION */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* INICIO */
+
+.inicio {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("../imagenes/pepperoni.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio div {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.inicio h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* BOTÓN */
+
+.boton {
+    background-color: #f77f00;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* SECCIONES */
+
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* MENÚ */
+
+.contenedor-pizzas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pizza {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pizza:hover {
+    transform: translateY(-5px);
+}
+
+.pizza img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pizza h3 {
+    margin: 15px 0 10px;
+    color: #d62828;
+}
+
+.pizza p {
+    margin-bottom: 15px;
+}
+
+.pizza strong {
+    color: #f77f00;
+    font-size: 20px;
+}
+
+button {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f77f00;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.nosotros p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+
+/* CONTACTO */
+
+.contacto p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+
+/* DISENO PARA CELULARES */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+}
+
+.testimonios {
+    background-color: #fff8f0; /* fondo suave */
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 32px;
+    color: #d62828; /* rojo corporativo */
+    margin-bottom: 30px;
+}
+
+.testimonios blockquote {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    background: #ffffff;
+    border-left: 5px solid #d62828; /* barra roja al lado */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+
+/* INFO PIZZA */
+#info-pizza {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff8f0;
+    border: 2px solid #d62828;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* SECCIONES NOSOTROS Y TESTIMONIOS EN DOS COLUMNAS */
+.contenedor-nosotros, .contenedor-testimonios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+}
+
+.nosotros-texto, .testimonios-texto {
+ 
+ color: #333; 
+}
+
+.nosotros-texto h2, .testimonios-texto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #d62828; 
+}
+
+.nosotros-texto p, .testimonios-texto blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.nosotros-imagen img, .testimonios-imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .contenedor-nosotros, .contenedor-testimonios {
+        flex-direction: column;
+        text-align: center;
+    }
+}

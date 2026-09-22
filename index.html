@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hot</title>
+
+    <!-- Conectar el archivo CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1> Pizza Hot</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menu</a>
+            <a href="#nosotros">Nosotros</a>
+             <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+
+        <div>
+            <h2>La pizza que estabas esperando </h2>
+
+            <p>
+                Disfruta pizzas recien hechas con ingredientes
+                de calidad y mucho sabor.
+            </p>
+
+            <a href="#menu" class="boton">Ver nuestro menu</a>
+        </div>
+
+    </section>
+
+
+    <!-- SECCIoN MENU -->
+    <section id="menu">
+
+    <h2>Nuestro Menú</h2>
+
+    <div class="contenedor-pizzas">
+
+        <div class="pizza">
+            <img src="imagenes/pepperoni.jpg" alt="Pizza Pepperoni">
+            <h3>Pizza Pepperoni</h3>
+            <p>Salsa de tomate, queso mozzarella y pepperoni.</p>
+            <strong>$25.000</strong>
+
+            <button onclick="mostrarPizza('Pizza Pepperoni', '$25.000')">
+                Ver pizza
+            </button>
+        </div>
+
+
+        <div class="pizza">
+            <img src="imagenes/hawaiana.jpg" alt="Pizza Hawaiana">
+            <h3>Pizza Hawaiana</h3>
+            <p>Jamón, piña y queso mozzarella.</p>
+            <strong>$24.000</strong>
+
+            <button onclick="mostrarPizza('Pizza Hawaiana', '$24.000')">
+                Ver pizza
+            </button>
+        </div>
+
+
+        <div class="pizza">
+            <img src="imagenes/napolitana.jpg" alt="Pizza Napolitana">
+            <h3>Pizza Napolitana</h3>
+            <p>Albahaca, tomate y queso mozzarella.</p>
+            <strong>$27.000</strong>
+
+            <button onclick="mostrarPizza('Pizza Napolitana', '$27.000')">
+                Ver pizza
+            </button>
+        </div>
+
+
+        <div class="pizza">
+            <img src="imagenes/cuatroquesos.jpg" alt="Pizza Cuatro Quesos">
+            <h3>Pizza Cuatro Quesos</h3>
+            <p>Mozzarella, parmesano, cheddar y queso azul.</p>
+            <strong>$28.000</strong>
+
+            <button onclick="mostrarPizza('Pizza Cuatro Quesos', '$28.000')">
+                Ver pizza
+            </button>
+        </div>
+
+        <div class="pizza">
+    <img src="imagenes/cabano.jpg" alt="Pizza Cabano">
+    <h3>Pizza Cabano</h3>
+    <p>Cabano ahumado, maduro, salsa de tomate y queso mozzarella.</p>
+    <strong>$26.000</strong>
+    <button onclick="mostrarPizza('Pizza Cabano', '$26.000')">Ver pizza</button>
+</div>
+
+<div class="pizza">
+    <img src="imagenes/vegetariana.jpg" alt="Pizza Vegetariana">
+    <h3>Pizza Vegetariana</h3>
+    <p>Tomate, champiñones, pimientos y queso mozzarella.</p>
+    <strong>$26.000</strong>
+    <button onclick="mostrarPizza('Pizza Vegetariana', '$26.000')">Ver pizza</button>
+</div>
+
+<div class="pizza">
+    <img src="imagenes/polloychampinones.jpg" alt="Pizza Pollo con Champiñones">
+    <h3>Pizza Pollo con Champiñones</h3>
+    <p>Pollo, champiñones y queso mozzarella.</p>
+    <strong>$28.000</strong>
+    <button onclick="mostrarPizza('Pizza Pollo con Champiñones', '$28.000')">Ver pizza</button>
+</div>
+
+    </div>
+
+    <div id="info-pizza"></div>
+
+</section>
+
+<!-- SECCION NOSOTROS -->
+<section id="nosotros" class="nosotros">
+    <div class="contenedor-nosotros">
+        <div class="nosotros-texto">
+            <h2>Sobre Nosotros</h2>
+            <p>En <strong>Pizza Hot</strong> creemos que una buena pizza no solo alimenta, 
+               sino que también reúne a las personas. Nacimos en Cali con la idea de 
+               combinar la tradición italiana con el sabor único de nuestros ingredientes 
+               locales.</p>
+            <p>Seleccionamos productos frescos cada día y preparamos nuestras masas de 
+               manera artesanal, para que cada bocado tenga ese toque casero que nos 
+               diferencia. Nuestro compromiso es ofrecer calidad, sabor y un ambiente 
+               acogedor donde cada cliente se sienta como en casa.</p>
+        </div>
+        <div class="nosotros-imagen">
+            <img src="imagenes/nosotros.jpg" alt="Horno de leña con pizza">
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCION TESTIMONIOS -->
+<section id="testimonios" class="testimonios">
+    <div class="contenedor-testimonios">
+        <div class="testimonios-imagen">
+            <img src="imagenes/testimonios.jpg" alt="Clientes disfrutando pizza">
+        </div>
+        <div class="testimonios-texto">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <blockquote>
+                “La mejor pizza de Cali, siempre fresca y con un sabor único.” – Andrea
+            </blockquote>
+            <blockquote>
+                “El servicio es excelente y el ambiente acogedor.” – Carlos
+            </blockquote>
+            <blockquote>
+                “Pizza Hot es nuestro lugar favorito para compartir en familia.” – Valentina
+            </blockquote>
+        </div>
+    </div>
+</section>
+>
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>Contactanos</h2>
+
+        <p> Cali, Colombia</p>
+
+        <p>Telefono: 300 123 4567</p>
+
+        <p> contacto@pizzahot.com</p>
+
+        <p> Instagram: @pizzahot</p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3> Pizza Hot</h3>
+
+        <p>Cali, Colombia | 300 123 4567</p>
+
+        <p>2026 Pizza Hot</p>
+
+    </footer>
+
+
+    <!-- Conectar JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
